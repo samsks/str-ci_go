@@ -13,7 +13,7 @@ jobs:
             - name: Check application with Node.js ${{matrix.node-version}}
               uses: actions/checkout@v2
               with:
-                node-version: 16
+                node-version: 18
             - name: Check Go ${{matrix.go-version}} application
               uses: actions/setup-go@v2
               with:
