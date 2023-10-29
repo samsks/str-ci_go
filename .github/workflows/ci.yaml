@@ -15,10 +15,10 @@ jobs:
               with:
                 node-version: 16
             - name: Install and Check Go ${{matrix.go-version}} application
-              uses: actions/setup-go@v2
-              with:
-                  go-version: ${{ matrix.go-version }}
-            - name: Check application
+            #   uses: actions/setup-go@v2
+            #   with:
+            #       go-version: ${{ matrix.go-version }}
+            # - name: Check application
               run: |
                   gimme ${{matrix.go-version}}
                   go version
